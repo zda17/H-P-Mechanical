@@ -8,8 +8,8 @@ const navBarLinks = [
 // An array of links for footer
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  google: "https://www.google.com/",
+  facebook: "https://www.facebook.com/ktchvacplumb/",
+  google: "https://www.google.com/search?q=kelch+hvac&oq=kelch+hvac&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPNIBCDExNTJqMWo0qAIAsAIB&sourceid=chrome&ie=UTF-8",
 };
 
 export default {
