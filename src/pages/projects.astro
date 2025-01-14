@@ -4,6 +4,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import MainSection from "@components/ui/blocks/MainSection.astro";
 import LeftSection from "@components/ui/blocks/LeftSection.astro";
 import RightSection from "@components/ui/blocks/RightSection.astro";
+import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 import ServicesSection from "@components/ui/blocks/ServicesSection.astro"
 
@@ -167,4 +168,11 @@ const pageTitle: string = `Projects | ${SITE.title}`;
   }
 
   <TestimonialsSectionAlt />
+
+  <HeroSectionAlt
+    title="Let's Work Together"
+    subTitle="We're family-owned, local, and looking forward to earning your trust."
+    btnTitle="Get a Quote"
+    url="/contact"
+  />
 </MainLayout>
