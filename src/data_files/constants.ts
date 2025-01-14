@@ -2,10 +2,10 @@ import ogImageSrc from "@images/social.png";
 
 export const SITE = {
   title: "Kelch Total Comfort LLC",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
+  tagline: "Top-quality Heating, Air Conditioning and Ventilation Services",
+  description: "Kelch Total Comfort LLC is a family owned heating, air conditioning and ventilation company based in Henryetta, Oklahoma. We offer top-tier heating, air conditioning and ventilation services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
+  description_short: "Kelch Total Comfort LLC is a family owned heating, air conditioning and ventilation company based in Henryetta, Oklahoma. We offer top-tier heating, air conditioning and ventilation services to meet all your project needs.",
+  url: "https://kelchtotalcomfort.com",
   author: "Emil Gulamov",
 };
 
@@ -33,7 +33,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Jacky with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: : Kelch Total Comfort LLC`,
+  description: "Kelch Total Comfort LLC is a family owned heating, air conditioning and ventilation company based in Henryetta, Oklahoma. We offer top-tier heating, air conditioning and ventilation services to meet all your project needs.",
   image: ogImageSrc,
 };

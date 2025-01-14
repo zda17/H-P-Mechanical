@@ -10,10 +10,9 @@ export default defineConfig({
   image: {
     domains: ["images.unsplash.com"],
   },
-  //   routing: {
-  //     prefixDefaultLocale: false,
-  //   },
-  // },
+  routing: {
+    prefixDefaultLocale: true,
+  },
   prefetch: true,
   integrations: [
     tailwind(),
