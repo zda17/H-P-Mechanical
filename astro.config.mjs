@@ -6,7 +6,7 @@ import compressor from "astro-compressor";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://htchvac.com",
+  site: "https://ktchvac.com",
   image: {
     domains: ["images.unsplash.com"],
   },
