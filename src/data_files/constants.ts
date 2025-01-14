@@ -6,7 +6,7 @@ export const SITE = {
   description: "Kelch Total Comfort LLC is a family owned heating, air conditioning and ventilation company based in Henryetta, Oklahoma. We offer top-tier heating, air conditioning and ventilation services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
   description_short: "Kelch Total Comfort LLC is a family owned heating, air conditioning and ventilation company based in Henryetta, Oklahoma. We offer top-tier heating, air conditioning and ventilation services to meet all your project needs.",
   url: "https://kelchtotalcomfort.com",
-  author: "Emil Gulamov",
+  author: "Zach Alvstad",
 };
 
 export const SEO = {
