@@ -6,7 +6,7 @@ import compressor from "astro-compressor";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  site: "https://htchvac.com",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -40,7 +40,7 @@ export default defineConfig({
         },
       ],
       social: {
-        github: "https://github.com/mearashadowfax/ScrewFast",
+        github: "",
       },
       disable404Route: true,
       customCss: ["./src/assets/styles/starlight.css"],
@@ -51,14 +51,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://ktchvac.com",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://ktchvac.com",
           },
         },
       ],
