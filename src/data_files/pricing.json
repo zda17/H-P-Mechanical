@@ -8,8 +8,8 @@
   "starterKit": {
     "name": "Silver Agreement",
     "description": "Best budget option",
-    "price": "15",
-    "cents": ".00",
+    "price": "14",
+    "cents": ".99",
     "billingFrequency": "USD / monthly",
     "features": [
       "Benefit 1",
@@ -24,7 +24,7 @@
     "name": "Gold Agreement",
     "description": "Best for equipment lifespan",
     "price": "34",
-    "cents": ".00",
+    "cents": ".99",
     "billingFrequency": "USD / monthly",
     "features": [
       "Benefit 1",
