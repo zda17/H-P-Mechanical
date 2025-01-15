@@ -12,9 +12,9 @@
     "cents": ".25",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Benefit 1",
-      "Benefit 2",
-      "Benefit 3"
+      "1 Year Repair Warranty",
+      "1 Heating OR 1 Cooling Inspection",
+      "Clean Drain Line"
     ],
     "purchaseBtnTitle": "Buy Now",
     "purchaseLink": "https://hvac.money/checkout/demo-hvac/price_1QhKKS2eSuQtFxoboNb0bsIz"
@@ -27,10 +27,9 @@
     "cents": ".00",
     "billingFrequency": "USD / yearly",
     "features": [
-      "Benefit 1",
-      "Benefit 2",
-      "Benefit 3",
-      "Benefit 4"
+      "1 Year Repair Warranty",
+      "1 Heating AND 1 Cooling Inspection",
+      "Clean Drain Line"
     ],
     "purchaseBtnTitle": "Buy Now",
     "purchaseLink": "https://hvac.money/checkout/demo-hvac/price_1QhKKR2eSuQtFxobpiXFeOTP"
