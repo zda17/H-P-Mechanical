@@ -6,10 +6,10 @@
   "btnText": "Get a Custom Quote",
 
   "starterKit": {
-    "name": "Silver Agreement",
+    "name": "Bronze Agreement (Monthly)",
     "description": "Best budget option",
-    "price": "14",
-    "cents": ".99",
+    "price": "8",
+    "cents": ".25",
     "billingFrequency": "USD / monthly",
     "features": [
       "Benefit 1",
@@ -17,15 +17,15 @@
       "Benefit 3"
     ],
     "purchaseBtnTitle": "Buy Now",
-    "purchaseLink": "#"
+    "purchaseLink": "https://hvac.money/checkout/demo-hvac/price_1QhKKS2eSuQtFxoboNb0bsIz"
   },
 
   "professionalToolbox": {
-    "name": "Gold Agreement",
+    "name": "Bronze Agreement (Yearly)",
     "description": "Best for equipment lifespan",
-    "price": "34",
-    "cents": ".99",
-    "billingFrequency": "USD / monthly",
+    "price": "99",
+    "cents": ".00",
+    "billingFrequency": "USD / yearly",
     "features": [
       "Benefit 1",
       "Benefit 2",
@@ -33,6 +33,6 @@
       "Benefit 4"
     ],
     "purchaseBtnTitle": "Buy Now",
-    "purchaseLink": "#"
+    "purchaseLink": "https://hvac.money/checkout/demo-hvac/price_1QhKKR2eSuQtFxobpiXFeOTP"
   }
 }
