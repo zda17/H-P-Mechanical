@@ -11,6 +11,8 @@ import ServicesSection from "@components/ui/blocks/ServicesSection.astro"
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
 
 // Import necessary images
+import HeroImageAlt from "@images/hero-image-3.png";
+import HeroImageAltTwo from "@images/hero-image-4.png";
 import heatingInstallation from "@images/heating-installation.jpg";
 import heatingInstallationTwo from "@images/heating-installation-2.jpg";
 import samsung from "@images/samsung.jpg";
@@ -38,6 +40,19 @@ interface Article {
 }
 
 const articles: Article[] = [
+{
+    isRightSection: false,
+    title: "Commercial HVAC Installation for Henryetta High School",
+    subTitle:"Installed a new commercial grade HVAC system for Henryetta High School, ensuring optimal comfort and energy efficiency for the school's students and staff!",
+    single: false,
+    imgOne: HeroImageAlt,
+    imgOneAlt: "Blueprints and digital tablet with construction plans.",
+    imgTwo: HeroImageAltTwo,
+    imgTwoAlt: "Person working in the office",
+    btnExists: true,
+    btnTitle: "Get a quote",
+    btnURL: "/contact",
+  },
   {
     isRightSection: true,
     title: "American Standard System Installation For A Cozy Winter",
@@ -130,14 +145,6 @@ const pageTitle: string = `Projects | ${SITE.title}`;
     "inLanguage": "en-US"
   }}
 >
-  <!--MainSection is the introductory section of the page, it also contains a CTA button-->
-  <MainSection
-    title="Our Latest Projects"
-    subTitle="At Kelch Total Comfort, we take pride in providing comprehensive solutions and exceptional service in the heating, AC and ventilation industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services. Take a look at some of our recent projects."
-    btnExists={true}
-    btnTitle="Get a Quote"
-    btnURL="/contact"
-  />
   <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
   They alternate for variety in design.
   The 'btnExists' property is used to toggle the display of a button in these sections.
