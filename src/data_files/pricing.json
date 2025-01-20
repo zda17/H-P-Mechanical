@@ -6,32 +6,71 @@
   "btnText": "Get a Custom Quote",
 
   "starterKit": {
-    "name": "Bronze Agreement (Monthly)",
+    "name": "Essential Plan",
     "description": "Best budget option",
-    "price": "8",
-    "cents": ".25",
-    "billingFrequency": "USD / monthly",
+    "price": "15",
+    "cents": ".00",
+    "billingFrequency": "per month",
     "features": [
-      "1 Year Repair Warranty",
-      "1 Heating OR 1 Cooling Inspection",
-      "Clean Drain Line"
+      "2 Seasonal Tune-Ups (Spring and Fall)",
+      "Filter Replacement (Standard 1\" filters, customer-supplied if special sizes)",
+      "System Efficiency Check (includes thermostat check, refrigerant levels, and airflow testing)",
+      "10% Discount on Repairs and Parts",
+      "Priority Scheduling for Service Calls"
     ],
     "purchaseBtnTitle": "Buy Now",
-    "purchaseLink": "https://hvac.money/checkout/demo-hvac/price_1QhKKS2eSuQtFxoboNb0bsIz"
+    "purchaseLink": "https://hvac.money/checkout/kelch/price_1Qhxor2eLaKSCF0O6yrMlCTq"
   },
 
   "professionalToolbox": {
-    "name": "Bronze Agreement (Yearly)",
+    "name": "Comfort Plan",
     "description": "Best for equipment lifespan",
-    "price": "99",
+    "price": "25",
     "cents": ".00",
-    "billingFrequency": "USD / yearly",
+    "billingFrequency": "per month",
     "features": [
-      "1 Year Repair Warranty",
-      "1 Heating AND 1 Cooling Inspection",
-      "Clean Drain Line"
+      "3 Seasonal Tune-Ups (Spring, Summer, and Fall)",
+      "Filter Replacement (Standard 1\" filters, customer-supplied if special sizes)",
+      "System Efficiency Check (includes thermostat check, refrigerant levels, and airflow testing)",
+      "10% Discount on Repairs and Parts",
+      "Priority Scheduling for Service Calls",
+      "Unlimited Filter Replacements (upgraded filters included, if needed)",
+      "Evaporator Coil Cleaning (once per year)",
+      "Drain Line Cleaning (once per year)",
+      "Indoor Air Quality Assessment (includes humidity and pollutant checks)",
+      "15% Discount on Repairs and Parts",
+      "1 Free Service Call (valued up to $150)"
     ],
     "purchaseBtnTitle": "Buy Now",
-    "purchaseLink": "https://hvac.money/checkout/demo-hvac/price_1QhKKR2eSuQtFxobpiXFeOTP"
+    "purchaseLink": "https://hvac.money/checkout/kelch/price_1QhyRP2eLaKSCF0OtzJMeCvZ"
+  },
+
+  "enterpriseSuite": {
+    "name": "Ultimate Comfort Plan",
+    "description": "Best for ultimate peace of mind",
+    "price": "40",
+    "cents": ".00",
+    "billingFrequency": "per month",
+    "features": [
+      "3 Seasonal Tune-Ups (Spring, Summer, and Fall)",
+      "Filter Replacement (Standard 1\" filters, customer-supplied if special sizes)",
+      "System Efficiency Check (includes thermostat check, refrigerant levels, and airflow testing)",
+      "10% Discount on Repairs and Parts",
+      "Priority Scheduling for Service Calls",
+      "Unlimited Filter Replacements (upgraded filters included, if needed)",
+      "Evaporator Coil Cleaning (once per year)",
+      "Drain Line Cleaning (once per year)",
+      "Indoor Air Quality Assessment (includes humidity and pollutant checks)",
+      "15% Discount on Repairs and Parts",
+      "1 Free Service Call (valued up to $150)",
+      "Biannual Duct Inspection and Minor Adjustments",
+      "Comprehensive System Calibration (includes detailed performance reporting)",
+      "Priority Emergency Service (next available appointment)",
+      "Up to $300 Repair Credit (usable once annually)",
+      "20% Discount on Repairs and Parts",
+      "Extended Equipment Warranty (terms apply, subject to age of system)"
+    ],
+    "purchaseBtnTitle": "Buy Now",
+    "purchaseLink": "https://hvac.money/checkout/kelch/price_1QhySC2eLaKSCF0OQfZ6ngvG"
   }
 }
