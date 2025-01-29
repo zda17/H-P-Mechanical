@@ -8,6 +8,7 @@ main:
   imgCard: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185257/furance_eigsfv.jpg"
   imgMain: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185257/furance_eigsfv.jpg"
   imgAlt: "Mockup boxes of assorted screw set"
+  url: "/contact"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

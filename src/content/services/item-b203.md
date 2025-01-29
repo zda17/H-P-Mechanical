@@ -8,6 +8,7 @@ main:
   imgCard: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185279/reme-halo_rlrudu.jpg"
   imgMain: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185279/reme-halo_rlrudu.jpg"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
+  url: "/contact"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

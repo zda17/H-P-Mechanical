@@ -8,6 +8,7 @@ main:
   imgCard: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185300/ac-service_mwe0og.jpg"
   imgMain: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185300/ac-service_mwe0og.jpg"
   imgAlt: "Mockup boxes of hex bolts"
+  url: "https://hvac.money/checkout/kelch"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

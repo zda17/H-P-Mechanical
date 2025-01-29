@@ -8,6 +8,7 @@ main:
   imgCard: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185257/ac_install_z2tgl6.jpg"
   imgMain: "https://res.cloudinary.com/dumtlrlhd/image/upload/v1738185257/ac_install_z2tgl6.jpg"
   imgAlt: "Mockup boxes of machine screws set"
+  url: "/contact"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
