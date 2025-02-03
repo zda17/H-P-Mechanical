@@ -13,6 +13,105 @@ import type { CollectionEntry } from "astro:content";
 
 import { SITE } from "@data/constants";
 
+const servicesList = [
+  {
+    id: 1,
+    title: "Heating Services",
+    description: "Stay warm and energy-efficient with our expert heating solutions",
+    features: [
+      "Furnace Installation & Replacement – High-efficiency heating systems tailored to your needs",
+      "Heating Repair – Prompt and reliable repairs to restore your comfort",
+      "Preventative Maintenance – Regular check-ups to improve efficiency and system lifespan",
+      "Heat Pump Services – Installation, maintenance, and repair for year-round comfort"
+    ]
+  },
+  {
+    id: 2,
+    title: "Cooling Services",
+    description: "Keep your home cool with our professional cooling services",
+    features: [
+      "AC Installation & Replacement – Energy-efficient air conditioning systems for optimal comfort",
+      "AC Repair – Fast and effective solutions to get your system back up and running",
+      "Seasonal Maintenance – Prevent breakdowns and ensure peak performance",
+      "Ductless Mini-Splits – Custom zoned cooling options for enhanced energy savings"
+    ]
+  },
+  {
+    id: 3,
+    title: "New Construction HVAC Services",
+    description: "We specialize in providing HVAC solutions for new construction projects, ensuring your system is built for long-term efficiency and comfort",
+    features: [
+      "Residential New Construction HVAC – Customized heating and cooling solutions for new homes",
+      "Commercial New Construction HVAC – Scalable and energy-efficient HVAC installations for businesses",
+      "System Design & Consultation – Work with our experts to plan and implement the ideal HVAC system",
+      "Ductwork Installation – Properly designed duct systems to maximize airflow and efficiency"
+    ]
+  },
+  {
+    id: 4,
+    title: "Gas Line Services",
+    description: "Trust our licensed professionals for safe and efficient gas line services",
+    features: [
+      "Gas Line Installation – Expert installation for furnaces, water heaters, stoves, and other appliances",
+      "Gas Line Repairs – Prompt repairs to address leaks and ensure safety",
+      "Gas Line Inspections – Thorough inspections to detect potential issues and maintain compliance",
+      "Gas Appliance Hookups – Safe connections for all your gas-powered appliances"
+    ]
+  },
+  {
+    id: 5,
+    title: "Indoor Air Quality Solutions",
+    description: "Improve the air you breathe with our indoor air quality services",
+    features: [
+      "Air Purification Systems – Advanced solutions to remove airborne pollutants and allergens",
+      "Humidifiers & Dehumidifiers – Maintain balanced indoor humidity levels",
+      "Duct Cleaning Services – Enhance air quality by removing dust and debris from your ducts"
+    ]
+  },
+  {
+    id: 6,
+    title: "Ductwork Services",
+    description: "Proper ductwork is essential for efficient HVAC operation",
+    features: [
+      "Duct Installation – Custom solutions to optimize airflow and efficiency",
+      "Duct Repair & Sealing – Improve energy efficiency by sealing leaks and repairing damage",
+      "Duct Modifications – Enhancements to improve airflow and comfort throughout your space"
+    ]
+  },
+  {
+    id: 7,
+    title: "Commercial HVAC Services",
+    description: "Our commercial HVAC services are tailored to meet the unique needs of businesses",
+    features: [
+      "HVAC System Installation – Scalable solutions for offices, retail spaces, and more",
+      "Routine Maintenance Plans – Preventative maintenance to reduce downtime and operational costs",
+      "Emergency Repairs – 24/7 services to keep your business running smoothly"
+    ]
+  },
+  {
+    id: 8,
+    title: "Maintenance Agreements",
+    description: "Keep your HVAC system in top condition with our flexible maintenance agreements",
+    features: [
+      "Scheduled Inspections – Regular tune-ups to extend system lifespan and improve efficiency",
+      "Priority Service – Get priority scheduling and faster response times",
+      "Discounted Repairs – Exclusive savings on repair services and parts",
+      "Energy Efficiency Improvements – Lower energy bills with optimized system performance"
+    ]
+  },
+  {
+    id: 9,
+    title: "Emergency HVAC Services",
+    description: "Unexpected HVAC issues? We offer 24/7 emergency services, so you're never left without heating or cooling when you need it most",
+    features: [
+      "24/7 Emergency Response",
+      "Rapid Diagnostics and Repairs",
+      "All Major HVAC Systems Serviced",
+      "Expert Emergency Team"
+    ]
+  }
+];
+
 const service: CollectionEntry<"services">[] = (
   await getCollection("services")
 ).sort(
@@ -59,34 +158,77 @@ const pageTitle: string = `Services | ${SITE.title}`;
       </div>
 
       <p class="lg:w-1/2 text-left">
-        At Kelch’s Total Comfort, we provide top-quality HVAC solutions to keep your home or business comfortable all year long. Our experienced professionals offer reliable, efficient, and affordable services, from installations to emergency repairs. Whether you need heating, cooling, or air quality solutions, we’re here to help.
+        At Kelch's Total Comfort, we provide top-quality HVAC solutions to keep your home or business comfortable all year long. Our experienced professionals offer reliable, efficient, and affordable services, from installations to emergency repairs. Whether you need heating, cooling, or air quality solutions, we're here to help.
       </p>
     </div>
     <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+    <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 xl:gap-8">
       {
         service.map((service, index) => {
-          const position = index % 4;
-          if (position === 0 || position === 3) {
-            return <CardSmall service={service} />;
-          } else {
-            return <CardWide service={service} />;
-          }
+          return <CardSmall service={service} />;
         })
       }
     </section>
   </div>
-  <!--Features statistics section-->
-  <FeaturesStatsAlt
-    title="Why Choose Kelch's Total Comfort?"
-    subTitle="We are a family-owned and operated and dedicated to providing the best possible service to our customers."
-    benefits={[
-      "Expert HVAC technicians for reliable and efficient services.",
-      "Emergency repairs available for unexpected issues.",
-      "Affordable pricing for all HVAC needs.",
-    ]}
-  />
+
+  <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <!--Features statistics section-->
+    <FeaturesStatsAlt
+      title="Why Choose Kelch's Total Comfort?"
+      subTitle="We are a family-owned and operated and dedicated to providing the best possible service to our customers."
+      benefits={[
+        "Expert HVAC technicians for reliable and efficient services.",
+        "Emergency repairs available for unexpected issues.",
+        "Affordable pricing for all HVAC needs.",
+      ]}
+    />
+  </div>
+
+  <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight">
+          All Services
+        </h2>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {
+          servicesList.map((service) => (
+            <div class="flex flex-col h-full p-6 bg-neutral-100 dark:bg-neutral-800/50 rounded-xl shadow-sm transition-all duration-200 hover:shadow-md">
+              <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-200 mb-3">
+                {service.title}
+              </h3>
+              <p class="text-neutral-600 dark:text-neutral-400 mb-4">
+                {service.description}
+              </p>
+              <ul class="mt-auto space-y-2">
+                {service.features.map((feature) => (
+                  <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
+                    <svg 
+                      class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        stroke-width="2" 
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span class="text-sm">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
   <!--Testimonials section-->
   <TestimonialsSectionAlt
     title="What Our Customers Say"
