@@ -51,18 +51,6 @@ type Product = {
         </h3>
         <p class="text-indigo-300">{pricing.starterKit.description}</p>
       </div>
-
-      <div class="mb-4">
-        <span class="text-4xl font-bold text-neutral-200"
-          >{pricing.starterKit.price}</span
-        >
-        <span class="text-lg font-bold text-neutral-300"
-          >{pricing.starterKit.cents}</span
-        >
-        <span class="ms-3 text-sm text-indigo-200"
-          >{pricing.starterKit.billingFrequency}</span
-        >
-      </div>
       <!-- Features list - automatically created by mapping over `features` array -->
       <ul class="mb-6 space-y-2 text-neutral-300">
         {
@@ -78,8 +66,14 @@ type Product = {
       <!-- CTA for purchasing the product -->
       <a
         href={pricing.starterKit.purchaseLink}
-      class="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-bold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-gray-300 md:text-base"
+        class="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-bold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-gray-300 md:text-base mb-2"
         >{pricing.starterKit.purchaseBtnTitle}</a
+      >
+
+      <a
+        href={pricing.starterKit.purchaseLinkYearly}
+        class="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-bold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-gray-300 md:text-base"
+        >{pricing.starterKit.purchaseBtnTitleYearly}</a
       >
     </div>
     <!-- Professional Toolbox product details -->
@@ -101,18 +95,6 @@ type Product = {
           >{pricing.badge}</span
         >
       </div>
-
-      <div class="mb-4">
-        <span class="text-6xl font-bold text-neutral-100"
-          >{pricing.professionalToolbox.price}</span
-        >
-        <span class="text-lg font-bold text-orange-100"
-          >{pricing.professionalToolbox.cents}</span
-        >
-        <span class="ms-3 text-orange-200"
-          >{pricing.professionalToolbox.billingFrequency}</span
-        >
-      </div>
       <!-- Features list - automatically created by mapping over `features` array -->
       <ul class="mb-6 space-y-2 text-orange-100">
         {
@@ -128,8 +110,14 @@ type Product = {
       <!-- CTA for purchasing the product -->
       <a
         href={pricing.professionalToolbox.purchaseLink}
-        class="block rounded-lg bg-orange-200 bg-opacity-50 px-8 py-3 text-center text-sm font-bold text-neutral-100 outline-none ring-orange-300 transition duration-100 hover:bg-orange-300 hover:bg-opacity-50 focus-visible:ring active:bg-orange-400 md:text-base"
+        class="block rounded-lg bg-orange-200 bg-opacity-50 px-8 py-3 text-center text-sm font-bold text-neutral-100 outline-none ring-orange-300 transition duration-100 hover:bg-orange-300 hover:bg-opacity-50 focus-visible:ring active:bg-orange-400 md:text-base mb-2"
         >{pricing.professionalToolbox.purchaseBtnTitle}</a
+      >
+
+      <a
+        href={pricing.professionalToolbox.purchaseLinkYearly}
+        class="block rounded-lg bg-orange-200 bg-opacity-50 px-8 py-3 text-center text-sm font-bold text-neutral-100 outline-none ring-orange-300 transition duration-100 hover:bg-orange-300 hover:bg-opacity-50 focus-visible:ring active:bg-orange-400 md:text-base"
+        >{pricing.professionalToolbox.purchaseBtnTitleYearly}</a
       >
     </div>
     <!-- Enterprise Suite product details -->
@@ -147,18 +135,6 @@ type Product = {
         </div>
       </div>
 
-      <div class="mb-4">
-        <span class="text-6xl font-bold text-red-500"
-          >{pricing.enterpriseSuite.price}</span
-        >
-        <span class="text-lg font-bold text-red-500"
-          >{pricing.enterpriseSuite.cents}</span
-        >
-        <span class="ms-3 text-red-500"
-          >{pricing.enterpriseSuite.billingFrequency}</span
-        >
-      </div>
-
       <ul class="mb-6 space-y-2 text-blue-100">
         {
           pricing.enterpriseSuite.features.map((feature: string) => (
@@ -172,8 +148,14 @@ type Product = {
 
       <a
         href={pricing.enterpriseSuite.purchaseLink}
-        class="block rounded-lg bg-blue-200 bg-red-500 px-8 py-3 text-center text-sm font-bold text-neutral-100 outline-none ring-blue-300 transition duration-100 hover:bg-blue-300 hover:bg-opacity-50 focus-visible:ring active:bg-blue-400 md:text-base"
+        class="block rounded-lg bg-blue-200 bg-red-500 px-8 py-3 text-center text-sm font-bold text-neutral-100 outline-none ring-blue-300 transition duration-100 hover:bg-blue-300 hover:bg-opacity-50 focus-visible:ring active:bg-blue-400 md:text-base mb-2"
         >{pricing.enterpriseSuite.purchaseBtnTitle}</a
+      >
+
+      <a
+        href={pricing.enterpriseSuite.purchaseLinkYearly}
+        class="block rounded-lg bg-blue-200 bg-red-500 px-8 py-3 text-center text-sm font-bold text-neutral-100 outline-none ring-blue-300 transition duration-100 hover:bg-blue-300 hover:bg-opacity-50 focus-visible:ring active:bg-blue-400 md:text-base"
+        >{pricing.enterpriseSuite.purchaseBtnTitleYearly}</a
       >
     </div>
   </div>

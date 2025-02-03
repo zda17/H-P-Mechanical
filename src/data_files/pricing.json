@@ -8,9 +8,6 @@
   "starterKit": {
     "name": "Essential Plan",
     "description": "Best budget option",
-    "price": "15",
-    "cents": ".00",
-    "billingFrequency": "per month",
     "features": [
       "2 Seasonal Tune-Ups (Spring and Fall)",
       "Filter Replacement (Standard 1\" filters, customer-supplied if special sizes)",
@@ -18,16 +15,15 @@
       "10% Discount on Repairs and Parts",
       "Priority Scheduling for Service Calls"
     ],
-    "purchaseBtnTitle": "Buy Now",
-    "purchaseLink": "https://hvac.money/checkout/kelch/price_1Qhxor2eLaKSCF0Orw9IAGN5"
+    "purchaseBtnTitle": "$15.00 / month >",
+    "purchaseLink": "https://hvac.money/checkout/kelch/price_1Qhxor2eLaKSCF0Orw9IAGN5",
+    "purchaseBtnTitleYearly": "$159.00 / year >",
+    "purchaseLinkYearly": "https://hvac.money/checkout/kelch/price_1QoEOE2eLaKSCF0OC4ndgqTK"
   },
 
   "professionalToolbox": {
     "name": "Comfort Plan",
     "description": "Best for equipment lifespan",
-    "price": "25",
-    "cents": ".00",
-    "billingFrequency": "per month",
     "features": [
       "3 Seasonal Tune-Ups (Spring, Summer, and Fall)",
       "Filter Replacement (Standard 1\" filters, customer-supplied if special sizes)",
@@ -41,16 +37,15 @@
       "15% Discount on Repairs and Parts",
       "1 Free Service Call (valued up to $150)"
     ],
-    "purchaseBtnTitle": "Buy Now",
-    "purchaseLink": "https://hvac.money/checkout/kelch/price_1QhyRP2eLaKSCF0OtzJMeCvZ"
+    "purchaseBtnTitle": "$25.00 / month >",
+    "purchaseLink": "https://hvac.money/checkout/kelch/price_1QhyRP2eLaKSCF0OtzJMeCvZ",
+    "purchaseBtnTitleYearly": "$300.00 / year >",
+    "purchaseLinkYearly": "https://hvac.money/checkout/kelch/price_1QhyRO2eLaKSCF0OJmJTfTgm"
   },
 
   "enterpriseSuite": {
     "name": "Ultimate Comfort Plan",
     "description": "Best for ultimate peace of mind",
-    "price": "40",
-    "cents": ".00",
-    "billingFrequency": "per month",
     "features": [
       "3 Seasonal Tune-Ups (Spring, Summer, and Fall)",
       "Filter Replacement (Standard 1\" filters, customer-supplied if special sizes)",
@@ -70,7 +65,9 @@
       "20% Discount on Repairs and Parts",
       "Extended Equipment Warranty (terms apply, subject to age of system)"
     ],
-    "purchaseBtnTitle": "Buy Now",
-    "purchaseLink": "https://hvac.money/checkout/kelch/price_1QhySC2eLaKSCF0OQfZ6ngvG"
+    "purchaseBtnTitle": "$40.00 / month >",
+    "purchaseLink": "https://hvac.money/checkout/kelch/price_1QhySC2eLaKSCF0OQfZ6ngvG",
+    "purchaseBtnTitleYearly": "$480.00 / year >",
+    "purchaseLinkYearly": "https://hvac.money/checkout/kelch/price_1QhySC2eLaKSCF0OG5CqIzEa"
   }
 }
