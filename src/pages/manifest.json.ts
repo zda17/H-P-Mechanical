@@ -44,8 +44,8 @@ export const GET: APIRoute = async () => {
   );
 
   const manifest = {
-    short_name: "Kelch Total Comfort",
-    name: "Kelch Total Comfort",
+    short_name: "H & P Heating and Air",
+    name: "H & P Heating and Air Conditioning",
     icons,
     display: "minimal-ui",
     id: "/",

@@ -55,23 +55,19 @@ type StatProps = {
       {
         testimonials &&
           testimonials.map((testimonial) => (
-          <TestimonialItem content={testimonial.content} author={testimonial.author} role={testimonial.role} />
+          <TestimonialItem content={testimonial.content} author={testimonial.author} role={testimonial.role} quotationColor="text-blue-600 dark:text-blue-500" />
           ))
       }
     </div>
     { statistics &&
         <div class="mt-10 lg:col-span-6 lg:col-end-13 lg:mt-0">
-          <div class="space-y-6 sm:space-y-8">
-            <ul
-              class="grid grid-cols-2 divide-x-2 divide-y-2 divide-neutral-300 overflow-hidden dark:divide-neutral-700"
-            >
-              <!-- Generate a list item for each stat in the statistics array by mapping over the array. -->
-              {
-                statistics.map((stat, index) => (
-                <StatsGrid count={stat.count} description={stat.description} index={index}/>
-                ))
-              }
-            </ul>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+            <!-- Generate a list item for each stat in the statistics array by mapping over the array. -->
+            {
+              statistics.map((stat, index) => (
+              <StatsGrid count={stat.count} description={stat.description} index={index}/>
+              ))
+            }
           </div>
         </div>
       }

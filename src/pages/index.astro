@@ -11,9 +11,9 @@ import FAQ from "@components/sections/misc/FAQ.astro";
 import pricing from "@data/pricing.json";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
 import faqs from "@data/faqs.json";
-import construction from "@images/ventilating.jpg";
-import tools from "@images/heating.jpg";
-import dashboard from "@images/automated-tools.jpg";
+import AC from "@images/ac.png";
+import heating from "@images/heating.jpeg";
+import Ventilation from "@images/ventilation.webp";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
 
 ---
@@ -29,19 +29,19 @@ import TestimonialsSectionAlt from "@components/sections/testimonials/Testimonia
   <HeroSection />
 
   <ClientsSection
-    title="The Best Equipment Money Can Buy"
+    title="Premium Brands You Can Trust"
     subTitle="Experience the reliability of American Standard and Samsung."
   />
 
   <TestimonialsSection
     title="Quality comes standard"
-    subTitle="At Kelch's Total Comfort, we ensure your home stays perfectly comfortable, year-round... whether you keep your thermostat at 65 or 78."
+    subTitle="At H & P Heating and Air Conditioning, we're committed to delivering exceptional comfort and reliability for your home or business, no matter the season."
     testimonials={[
       {
         content:
-          "On time, very respectful, and honest. I would reccomend them to anyone!",
-        author: "Brian Tyalor",
-        role: "Henryetta Resident",
+          "Absolutely 100% customer service! They go over & beyond. I called on a Monday for a quote, they ordered our unit & was completely installed by Friday. Thank you to your entire team for making this such an easy process!",
+        author: "Melissa Lee Smith",
+        role: "Customer",
       },
     ]}
     statistics={[
@@ -68,32 +68,32 @@ import TestimonialsSectionAlt from "@components/sections/testimonials/Testimonia
   />
 
   <FeaturesNavs
-    title=`<span class="text-red-500 dark:text-yellow-400">Kelch's</span> Total Comfort is there for every season.`
+    title=`<span class="text-red-500 dark:text-red-500">H & P</span> Heating and Air Conditioning—your trusted partner for year-round comfort.`
     tabs={[
       {
         heading: "Heating",
         content:
-          "As the weather shifts, we're here to ensure your family stays safe and warm throughout the upcoming winter months. Don't get left in the cold—let us help you stay cozy all season long!",
-        svg: "tools",
-        src: tools,
+          "Keep your home warm and your family protected during the coldest months. We provide reliable heating solutions for complete comfort all winter long.",
+        svg: "fire",
+        src: heating,
         alt: "Alt text for the image",
         first: true,
       },
       {
         heading: "Air Conditioning",
         content:
-          "With the extreme heat and excessive heat warnings in effect, you can rest assured that your air conditioning system will handle the summer temperatures without a struggle.",
-        svg: "dashboard",
-        src: dashboard,
+          "Beat the heat with confidence. Our expert team ensures your home stays cool and comfortable with reliable, energy-efficient cooling solutions.",
+        svg: "AC",
+        src: AC,
         alt: "Alt text for the image",
         second: true,
       },
       {
         heading: "Ventilating",
         content:
-          "We offer expert ventilation services designed to deliver fresh, clean air throughout your home or business. Let our skilled team enhance your indoor air quality, ensuring a healthier and more comfortable space for you and your family.",
+          "Breathe easier with superior indoor air quality. Our ventilation solutions deliver fresh, clean air year-round for a healthier living environment.",
         svg: "house",
-        src: construction,
+        src: Ventilation,
         alt: "Alt text for the image",
       },
     ]}

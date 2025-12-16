@@ -1,11 +1,26 @@
 {
   "title": "Preventative Maintenance Plans",
   "subTitle": [
-    "<b>Increases System Lifespan</b> - Proper maintenance extends the life of your HVAC system",
-    "<b>Lowers Utility Bills</b> - A well-maintained system runs more efficiently, reducing energy costs",
-    "<b>Prevents Costly Repairs</b> - Routine checkups help detect small issues before they become major problems",
-    "<b>Improves Indoor Air Quality</b> - Clean filters, coils, and ductwork mean healthier air for your home",
-    "<b>Ensures Year-Round Comfort</b> - No more unexpected breakdowns in extreme weather"
+    {
+      "title": "Increases System Lifespan",
+      "description": "Proper maintenance extends the life of your HVAC system",
+      "image": "src/images/hvac-lifespan.png"
+    },
+    {
+      "title": "Lowers Utility Bills",
+      "description": "A well-maintained system runs more efficiently, reducing energy costs",
+      "image": "src/images/utility-bill.jpg"
+    },
+    {
+      "title": "Prevents Costly Repairs",
+      "description": "Routine checkups help detect small issues before they become major problems",
+      "image": "src/images/repair.webp"
+    },
+    {
+      "title": "Improves Indoor Air Quality",
+      "description": "Clean filters, coils, and ductwork mean healthier air for your home",
+      "image": "src/images/air-quality.jpg"
+    }
   ],
   "badge": "Best value",
   "thirdOption": "Enterprise Solutions?",
@@ -15,99 +30,47 @@
     "name": "Comfort Shield Plan - 1st System (Basic Maintenance)",
     "description": "Best budget option",
     "features": [
-      "2 Precision Tune-Ups Per Year (Spring & Fall).",
-      "System Safety & Performance Inspection:",
-      "Check Refrigerant Levels & Pressures",
-      "Inspect Electrical Connections & Tighten as Needed",
-      "Test System Startup & Shutdown",
-      "Filter Replacement (Filters Sold Separately)",
-      "Inspect Condensate Drain for Blockages",
-      "Test Thermostat for Accuracy & Calibration (If Applicable)",
-      "Visually Inspect Ductwork for Airflow Issues",
-      "Check Blower Motor & Fan Operation",
-      "Inspect Condenser Coil & Rinse Off Debris",
-      "Inspect Evaporator Coil (If Accessible)",
-      "Priority Service Over Non-Members",
-      "5% Discount on Repairs",
-      "Transferable Membership If You Move (Same Town)",
-      "Discount on Additional Systems (Same Location)"
+      "Bi-annual system tune-ups to keep everything running smoothly",
+      "Comprehensive safety checks and performance evaluations",
+      "Priority scheduling for faster service response times",
+      "Member discounts on parts and repair services"
     ],
-    "purchaseBtnTitle": "$15.99 / month >",
-    "purchaseLink": "https://hvac.money/checkout/kelch/price_1QoiwU2eLaKSCF0OgsikJiNF",
-    "purchaseBtnTitleYearly": "$159.00 / year >",
-    "purchaseBtnSavingsYearly": "Save $32.88 ($13.25/month)",
-    "purchaseLinkYearly": "https://hvac.money/checkout/kelch/price_1QoibE2eLaKSCF0OWwkzhgtC"
+    "purchaseBtnTitle": "$16.99 / month >",
+    "purchaseLink": "",
+    "purchaseBtnTitleYearly": "$165.00 / year >",
+    "purchaseBtnSavingsYearly": "Save $38.88 ($13.75/month)",
+    "purchaseLinkYearly": ""
   },
 
   "professionalToolbox": {
     "name": "Comfort Defender Plan - 1st System (Advanced Maintenance)",
     "description": "Best for equipment lifespan",
     "features": [
-      "2 Precision Tune-Ups Per Year (Spring & Fall).",
-      "System Safety & Performance Inspection:",
-      "Check Refrigerant Levels & Pressures",
-      "Inspect Electrical Connections, Voltage, & Amperage",
-      "Test System Startup & Shutdown",
-      "Examine Air Filters & Replace (Customer Supplied)",
-      "Flush & Treat Condensate Drain Lines to Prevent Clogs",
-      "Test Thermostat for Accuracy & Calibration (If Applicable)",
-      "Visually Inspect Ductwork for Airflow Issues",
-      "Check Blower Motor & Fan Operation, (Clean If Necessary)",
-      "Inspect Condenser Coil & Rinse Off Debris",
-      "Inspect & Clean Evaporator Coil (In-Place, Does Not Included Removal If Necessary)",
-      "Inspect & Test Capacitor, Contactors, & Relays",
-      "Lubricate Moving Parts (If Applicable)",
-      "Test & Inspect Safety Controls",
-      "Indoor Air Quality Assessment (Included Humidity & Pollutant Checks)",
-      "Filter Replacement (Filters Sold Separately)",
-      "Priority Scheduling for Faster Service",
-      "10% Discount on Repairs",
-      "No Overtime or After-Hours Charges (Excluding Holidays)",
-      "Transferable Membership If You Move (Same Town)",
-      "Discount on Additional Systems (Same Location)"
+      "Enhanced maintenance with detailed component inspections",
+      "Air quality testing and filter recommendations included",
+      "Extended service hours with no overtime charges",
+      "Higher savings on repairs and system upgrades"
     ],
-    "purchaseBtnTitle": "$24.99 / month >",
-    "purchaseLink": "https://hvac.money/checkout/kelch/price_1Qoj5F2eLaKSCF0OAYkzLLL4",
-    "purchaseBtnTitleYearly": "$269.00 / year >",
-    "purchaseBtnSavingsYearly": "Save $30.88 ($22.42/month)",
-    "purchaseLinkYearly": "https://hvac.money/checkout/kelch/price_1Qoido2eLaKSCF0O3jkbFhv8"
+    "purchaseBtnTitle": "$25.99 / month >",
+    "purchaseLink": "",
+    "purchaseBtnTitleYearly": "$275.00 / year >",
+    "purchaseBtnSavingsYearly": "Save $36.88 ($20.41/month)",
+    "purchaseLinkYearly": ""
   },
 
   "enterpriseSuite": {
     "name": "Comfort Elite Plan - 1st System (Premium Maintenance & Protection)",
     "description": "Best for ultimate peace of mind",
     "features": [
-      "2 Precision Tune-Ups Per Year (Spring & Fall).",
-      "System Safety & Performance Inspection:",
-      "Full Refrigerant Level & Adjustments (If Needed - Up to 1 lb.)",
-      "Inspect & Secure All Electrical Wiring & Components.",
-      "Visually Inspect & Clean Heating Components",
-      "System Efficiency Test & Performance Calibration",
-      "Check & Inspect Blower Motor & Fan Operation",
-      "Inspect & Test Capacitor, Contactors, & Relays",
-      "Surge Protection Inspection & Recommendations",
-      "Gas Leak & Carbon Monoxide Testing (For Gas Furnaces)",
-      "Ductwork Inspection & Minor Adjustments (If Needed)",
-      "Flush & Treat Condensate Drain Lines to Prevent Clogs",
-      "Drain Pan Treatment to Prevent Mold & Algae Growth",
-      "Full System Deep Cleaning (Interior & Exterior Components)",
-      "Clean Coils with Cleaning Agents",
-      "Test for Proper Air Flow & Temperature Balance",
-      "Indoor Air Quality Assessment (Includes Humidity & Pollutant Checks)",
-      "Test & Inspect Safety Controls (Battery Replacement in Life Safety Equipment, CO and Fire Alarms).",
-      "Filter Replacement (Filters sold separately)",
-      "Front-Of-The-Line Priority Service",
-      "15% Discount on Repairs",
-      "No Overtime or After-Hours Charges (Excluding Holidays)",
-      "3-Year Warranty on Any Repairs Made",
-      "Exclusive Discounts On New System Installations",
-      "Transferable Membership If You Move (Same Town)",
-      "Discount on Additional Systems (Same location)"
+      "Complete system deep cleaning and optimization services",
+      "Maximum priority access with front-of-line service",
+      "Extended warranty coverage on all repair work",
+      "Exclusive installation discounts and premium support"
     ],
-    "purchaseBtnTitle": "$34.99 / month >",
-    "purchaseLink": "https://hvac.money/checkout/kelch/price_1Qoj7g2eLaKSCF0OvdR3ysZb",
-    "purchaseBtnTitleYearly": "$399.00 / year >",
-    "purchaseBtnSavingsYearly": "Save $20.88 ($33.25/month)",
-    "purchaseLinkYearly": "https://hvac.money/checkout/kelch/price_1Qoigu2eLaKSCF0OrN2og272"
+    "purchaseBtnTitle": "$35.99 / month >",
+    "purchaseLink": "",
+    "purchaseBtnTitleYearly": "$405.00 / year >",
+    "purchaseBtnSavingsYearly": "Save $26.88 ($33.75/month)",
+    "purchaseLinkYearly": ""
   }
 }

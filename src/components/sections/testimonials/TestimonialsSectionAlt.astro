@@ -3,33 +3,33 @@ import ReviewComponent from "@components/ui/blocks/ReviewComponent.astro";
 
 const testimonials = [
   {
-    content: "\"Chris was very kind and professional. Within 20 minutes of my call, he had someone on the way to look at it. He also took time to explain what they would be checking for. The technician arrived, got the part, and had everything fixed within a few hours.I really wasn't expecting such great service, especially with the temperatures being as high as they were, which no doubt kept them very busy. Thank you for helping us and doing it quickly!\"",
-    author: "Shayla Galapagos",
+    content: "Wonderful Service! Came out after hours as soon as we called about our AC going out. Found the issue and offered us a window unit until they could fix it the next day! Would definitely use again.",
+    author: "Amanda Spruce",
   },
   {
     content:
-      " \"Thank you Chris & staff for going the extra mile , after installing a new AC unit for me they discovered plumbing problems under my house they took care of getting a plumber for me and making sure the job got taken care of . I appreciate the help so much thx you all.\" ",
-    author: "Janel Trujillo",
+      "Outstanding service from start to finish. The technician arrived on time, thoroughly inspected our system, and clearly explained all the options available. Their honest approach and fair pricing made the decision easy. We're extremely satisfied with the quality of work and professionalism shown throughout the entire process.",
+    author: "Jason Miller",
   },
   {
     content:
-      " \"I called Kelch’s 3/20 to see about fixing my propane line under my house. It wasn’t holding pressure. They were able to come the next day 3/21. They were fast, efficient, and fair in pricing. It was such a relief to get my line fixed I figured it was gonna cost an arm & an leg but it didn’t.\" ",
-    author: "Javonna Jay Peel",
+      "Excellent experience with H & P Mechanical. They responded quickly to our service call and provided a comprehensive maintenance check. The team was knowledgeable, respectful of our home, and completed the work efficiently. We feel confident in their expertise and will definitely use their services again.",
+    author: "Cheryl Whaley",
   },
   {
     content:
-    "Awesome and amazing people to deal with.  They went above and beyond to get our AC system replaced during the heatwave this past summer.   They stayed as late as it took to get the job done so Dad didn't have to deal with another day in the heat. A phenomenal group of people from Chris down. I can't say enough good about them.",
-    author: "Robert Collins",
+      "We needed our AC system replaced during a heatwave and H & P Mechanical went above and beyond to help us. They worked late into the evening to ensure we had cooling restored the same day. The installation was done professionally, and they took time to explain the new system's features. Truly exceptional service when we needed it most.",
+    author: "David Moore ",
   },
   {
     content:
-      "\"We had an emergency with our AC unit during the hottest week of summer. Kelch's team came out within hours of our call and diagnosed the problem quickly. They had the parts on hand and fixed everything the same day. Their pricing was fair and the service was exceptional. Highly recommend!\"",
-    author: "Sarah Martinez",
+      "Had an emergency AC breakdown during the hottest week of summer. H & P Mechanical responded within hours, quickly diagnosed the issue, and had the necessary parts available. They completed the repair the same day with fair, transparent pricing. The technician was professional, courteous, and clearly explained what was wrong and how they fixed it.",
+    author: "Jennifer Brown",
   },
   {
     content:
-      "\"I've been using Kelch's for all my HVAC needs for the past 5 years. Their team is always professional, punctual, and thorough. Recently had them install a new heating system and the entire process was smooth from start to finish. Chris and his team are true professionals who really care about their customers.\"",
-    author: "Michael Anderson",
+      "We've been using H & P Mechanical for all our HVAC needs for several years now. Their team consistently demonstrates professionalism, punctuality, and attention to detail. Recently had them install a new heating system and the entire process was seamless. From initial consultation to final installation, they exceeded our expectations.",
+    author: "Mark Williams",
   }
 ];
 ---
@@ -49,10 +49,13 @@ const testimonials = [
 
   </div>
 
-  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" id="testimonials-grid">
     {
-      testimonials.map((testimonial) => (
-        <div class="flex h-auto">
+      testimonials.map((testimonial, index) => (
+        <div 
+          class={`flex h-auto ${index >= 3 ? 'hidden testimonials-hidden' : ''}`}
+          data-testimonial-index={index}
+        >
           <div class="flex flex-col rounded-xl bg-neutral-50 dark:bg-neutral-700">
             <div class="flex-auto p-4 md:p-6">
               <p class="text-pretty text-base italic text-neutral-600 dark:text-neutral-300 md:text-lg">
@@ -74,4 +77,47 @@ const testimonials = [
       ))
     }
   </div>
+
+  <!-- See More Button -->
+  {testimonials.length > 3 && (
+    <div class="mt-8 text-center">
+      <button
+        id="see-more-testimonials"
+        class="see-more-btn rounded-lg border-none px-6 py-3 text-sm font-bold text-white transition-colors duration-200"
+      >
+        See More Reviews
+      </button>
+    </div>
+  )}
 </section>
+
+<style>
+  .see-more-btn {
+    background-color: #0f172a !important;
+    border: none !important;
+  }
+  .see-more-btn:hover {
+    background-color: #1e293b !important;
+  }
+</style>
+
+<script>
+  const seeMoreBtn = document.getElementById('see-more-testimonials');
+  const hiddenTestimonials = document.querySelectorAll('.testimonials-hidden');
+  let isExpanded = false;
+
+  if (seeMoreBtn && hiddenTestimonials.length > 0) {
+    seeMoreBtn.addEventListener('click', () => {
+      hiddenTestimonials.forEach((testimonial) => {
+        if (isExpanded) {
+          testimonial.classList.add('hidden');
+        } else {
+          testimonial.classList.remove('hidden');
+        }
+      });
+      
+      isExpanded = !isExpanded;
+      seeMoreBtn.textContent = isExpanded ? 'See Less Reviews' : 'See More Reviews';
+    });
+  }
+</script>

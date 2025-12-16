@@ -18,7 +18,7 @@ const homeUrl = "/";
 >
   <!-- Navigation container -->
   <nav
-    class="relative mx-2 w-full rounded-[36px] border border-red-100/40 bg-red-50/60 px-4 py-3 backdrop-blur-md dark:border-neutral-700/40 dark:bg-neutral-800/80 dark:backdrop-blur-md md:flex md:items-center md:justify-between md:px-6 md:py-0 lg:px-8 xl:mx-auto"
+    class="navbar-gradient relative mx-2 w-full rounded-[36px] border border-red-100/40 bg-red-50/60 px-4 py-3 backdrop-blur-md dark:border-neutral-500/50 dark:backdrop-blur-md md:flex md:items-center md:justify-between md:px-6 md:py-0 lg:px-8 xl:mx-auto"
     aria-label="Global"
   >
     <div class="flex items-center justify-between">
@@ -29,16 +29,16 @@ const homeUrl = "/";
         aria-label="Brand"
       >
         <BrandLogo
-          class="h-12 lg:h-36 w-auto"
+          class="h-32 lg:h-36 w-32 lg:w-36"
         />
 
       </a>
 
       <a
-        href="tel:+19182684066"
+        href="tel:+9184262889"
         class="ml-2 lg:text-xl font-semibold dark:text-white w-full whitespace-nowrap"
       >
-        (918) 268-4066
+        (918) 426-2889
       </a>
     
       <!-- Collapse toggle for smaller screens -->
@@ -112,6 +112,14 @@ const homeUrl = "/";
     </div>
   </nav>
 </header>
+
+<style>
+  /* Gradient background for navbar in dark mode */
+  :global(.dark) .navbar-gradient {
+    background: linear-gradient(to right, rgba(115, 115, 115, 0.95), rgba(64, 64, 64, 0.95));
+  }
+</style>
+
 <!-- Theme Appearance script to manage light/dark modes -->
 <script is:inline>
   const HSThemeAppearance = {

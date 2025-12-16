@@ -74,7 +74,7 @@ export const Icons = {
       },
     ],
     class:
-      "h-6 w-6 flex-shrink-0 text-neutral-700 hs-tab-active:text-orange-400 dark:text-neutral-300 dark:hs-tab-active:text-orange-300 md:h-7 md:w-7",
+      "h-6 w-6 flex-shrink-0 text-neutral-700 hs-tab-active:text-red-500 dark:text-neutral-300 dark:hs-tab-active:text-red-500 md:h-7 md:w-7",
     width: 24,
     height: 24,
     viewBox: "0 0 24 24",
@@ -536,5 +536,32 @@ export const Icons = {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     stroke: "currentColor",
+  },
+  // Custom icons - add your own here
+  fire: {
+    paths: [
+      {
+        d: "M256.5 37.6C265.8 29.8 279.5 30.1 288.4 38.5C300.7 50.1 311.7 62.9 322.3 75.9C335.8 92.4 352 114.2 367.6 140.1C372.8 133.3 377.6 127.3 381.8 122.2C382.9 120.9 384 119.5 385.1 118.1C393 108.3 402.8 96 415.9 96C429.3 96 438.7 107.9 446.7 118.1C448 119.8 449.3 121.4 450.6 122.9C460.9 135.3 474.6 153.2 488.3 175.3C515.5 219.2 543.9 281.7 543.9 351.9C543.9 475.6 443.6 575.9 319.9 575.9C196.2 575.9 96 475.7 96 352C96 260.9 137.1 182 176.5 127C196.4 99.3 216.2 77.1 231.1 61.9C239.3 53.5 247.6 45.2 256.6 37.7zM321.7 480C347 480 369.4 473 390.5 459C432.6 429.6 443.9 370.8 418.6 324.6C414.1 315.6 402.6 315 396.1 322.6L370.9 351.9C364.3 359.5 352.4 359.3 346.2 351.4C328.9 329.3 297.1 289 280.9 268.4C275.5 261.5 265.7 260.4 259.4 266.5C241.1 284.3 207.9 323.3 207.9 370.8C207.9 439.4 258.5 480 321.6 480z",
+      },
+    ],
+    class:
+      "mt-2 h-6 w-6 flex-shrink-0 fill-neutral-700 hs-tab-active:fill-red-500 dark:fill-neutral-300 dark:hs-tab-active:fill-red-500 md:h-7 md:w-7",
+    width: 640,
+    height: 640,
+    viewBox: "0 0 640 640",
+    fill: "currentColor",
+  },
+  AC: {
+    paths: [
+      {
+        d: "M224 208C224 128.5 288.5 64 368 64C376.8 64 384 71.2 384 80L384 232.2C399 226.9 415.2 224 432 224C511.5 224 576 288.5 576 368C576 376.8 568.8 384 560 384L407.8 384C413.1 399 416 415.2 416 432C416 511.5 351.5 576 272 576C263.2 576 256 568.8 256 560L256 407.8C241 413.1 224.8 416 208 416C128.5 416 64 351.5 64 272C64 263.2 71.2 256 80 256L232.2 256C226.9 241 224 224.8 224 208zM320 352C337.7 352 352 337.7 352 320C352 302.3 337.7 288 320 288C302.3 288 288 302.3 288 320C288 337.7 302.3 352 320 352z",
+      },
+    ],
+    class:
+      "mt-2 h-6 w-6 flex-shrink-0 fill-neutral-700 hs-tab-active:fill-red-500 dark:fill-neutral-300 dark:hs-tab-active:fill-red-500 md:h-7 md:w-7",
+    width: 640,
+    height: 640,
+    viewBox: "0 0 640 640",
+    fill: "currentColor",
   },
 };

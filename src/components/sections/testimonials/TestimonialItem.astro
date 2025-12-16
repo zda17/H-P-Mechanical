@@ -1,32 +1,35 @@
 ---
 import Icon from "../../ui/icons/Icon.astro";
 
-const { content, author, role } = Astro.props;
+const { content, author, role, quotationColor } = Astro.props;
 
 interface Props {
   content: string;
   author: string;
-  role: string,
+  role: string;
+  quotationColor?: string;
 }
 ---
 
-<blockquote class="relative">
-  <Icon name="quotation" />
+<blockquote class="relative rounded-xl bg-white p-6 shadow-sm dark:bg-neutral-800 sm:p-8">
+  <div class={quotationColor || ""}>
+    <Icon name="quotation" />
+  </div>
 
   <div class="relative z-10">
-    <p class="text-xl italic text-neutral-800 dark:text-neutral-200">
+    <p class="text-lg italic leading-relaxed text-neutral-800 dark:text-neutral-200 sm:text-xl">
       {content}
     </p>
   </div>
 
-  <div class="mt-6">
+  <div class="mt-6 border-t border-neutral-200 pt-6 dark:border-neutral-700">
     <div class="flex items-center">
       <div class="grow">
         <div class="font-bold text-neutral-800 dark:text-neutral-200">
           {author}
         </div>
 
-        <div class="text-xs italic">
+        <div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
           {role}
         </div>
       </div>
