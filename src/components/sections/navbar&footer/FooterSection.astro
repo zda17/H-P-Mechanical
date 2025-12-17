@@ -4,6 +4,8 @@ import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
 import enStrings from "@utils/navigation.ts";
 import Icon from "@components/ui/icons/Icon.astro";
 import BrandLogo from "@components/BrandLogo.astro";
+import { Image } from "astro:assets";
+import LogoWhite from "@images/logowhite.png";
 import { SITE } from "@data/constants";
 
 // Select the correct translation based on the page's lang prop:
@@ -15,9 +17,21 @@ const crafted = "Crafted by";
   <div
     class="flex flex-col items-center justify-center p-4"
   >
-    <BrandLogo
-      class="h-24 w-32"
-    />
+    <!-- Light mode logo -->
+    <div class="block dark:hidden">
+      <BrandLogo
+        class="h-28 w-auto"
+      />
+    </div>
+    <!-- Dark mode white logo -->
+    <div class="hidden dark:block">
+      <Image
+        src={LogoWhite}
+        alt="H & P Mechanical Logo"
+        class="h-28 w-auto"
+        draggable={"false"}
+      />
+    </div>
 
     <div class="flex">
       <FooterSocialLink url={strings.socialLinks.facebook}
@@ -46,3 +60,4 @@ const crafted = "Crafted by";
     </script>
   </div>
 </footer>
+

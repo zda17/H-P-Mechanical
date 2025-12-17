@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("CometScrollTo.react",["react","react-compiler-runtime"],(function(t,n,r,o,a,i,l){"use strict";var e,s=e||(e=o("react")),u=e,c=u.useEffect,d=u.useRef;function m(e){var n=o("react-compiler-runtime").c(7),r=e.children,a=e.enabled,i=e.offset,l=e.scrollKey,u=i===void 0?0:i,m=d(null),p=d(null),_,f;n[0]!==a||n[1]!==u||n[2]!==l?(_=function(){var e=p.current;if(p.current=l,!(l!=null&&l===e)&&a&&m.current!=null){var n=m.current.offsetTop,r=t.requestAnimationFrame(function(){return t.scrollTo(t.pageXOffset,n+u)});return(function(){t.cancelAnimationFrame(r)})}},f=[a,l,u],n[0]=a,n[1]=u,n[2]=l,n[3]=_,n[4]=f):(_=n[3],f=n[4]),c(_,f);var g;return n[5]!==r?(g=s.jsx("div",{ref:m,children:r}),n[5]=r,n[6]=g):g=n[6],g}l.default=m}),98);

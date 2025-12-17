@@ -1,123 +1,131 @@
 ---
 // Importing necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
-import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
-import CardSmall from "@components/ui/cards/CardSmall.astro";
-import CardWide from "@components/ui/cards/CardWide.astro";
+import SecondaryCTA from "@components/ui/buttons/SecondaryCTA.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
-
-// Importing necessary functions from Astro
-import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
 
 import { SITE } from "@data/constants";
+
+// Import images for services
+import heatingImg from "@images/heating-installation.jpg";
+import acImg from "@images/AC.png";
+import constructionImg from "@images/construction-workers.avif";
+import gasImg from "@images/gas-valve.jpg";
+import airQualityImg from "@images/air-quality.jpg";
+import ventilationImg from "@images/ventilation.webp";
+import commercialImg from "@images/H&P-office.jpeg";
+import maintenanceImg from "@images/hvac-lifespan.png";
+import emergencyImg from "@images/repair.webp";
 
 const servicesList = [
   {
     id: 1,
     title: "Heating Services",
     description: "Stay warm and energy-efficient with our expert heating solutions",
+    image: heatingImg,
     features: [
-      "Furnace Installation & Replacement – High-efficiency heating systems tailored to your needs",
-      "Heating Repair – Prompt and reliable repairs to restore your comfort",
-      "Preventative Maintenance – Regular check-ups to improve efficiency and system lifespan",
-      "Heat Pump Services – Installation, maintenance, and repair for year-round comfort"
+      "Furnace Installation & Replacement",
+      "Heating Repair",
+      "Preventative Maintenance",
+      "Heat Pump Services"
     ]
   },
   {
     id: 2,
     title: "Cooling Services",
     description: "Keep your home cool with our professional cooling services",
+    image: acImg,
     features: [
-      "AC Installation & Replacement – Energy-efficient air conditioning systems for optimal comfort",
-      "AC Repair – Fast and effective solutions to get your system back up and running",
-      "Seasonal Maintenance – Prevent breakdowns and ensure peak performance",
-      "Ductless Mini-Splits – Custom zoned cooling options for enhanced energy savings"
+      "AC Installation & Replacement",
+      "AC Repair",
+      "Seasonal Maintenance",
+      "Ductless Mini-Splits"
     ]
   },
   {
     id: 3,
-    title: "New Construction HVAC Services",
-    description: "We specialize in providing HVAC solutions for new construction projects, ensuring your system is built for long-term efficiency and comfort",
+    title: "New Construction HVAC",
+    description: "HVAC solutions for new construction projects",
+    image: constructionImg,
     features: [
-      "Residential New Construction HVAC – Customized heating and cooling solutions for new homes",
-      "Commercial New Construction HVAC – Scalable and energy-efficient HVAC installations for businesses",
-      "System Design & Consultation – Work with our experts to plan and implement the ideal HVAC system",
-      "Ductwork Installation – Properly designed duct systems to maximize airflow and efficiency"
+      "Residential HVAC",
+      "Commercial HVAC",
+      "System Design & Consultation",
+      "Ductwork Installation"
     ]
   },
   {
     id: 4,
     title: "Gas Line Services",
-    description: "Trust our licensed professionals for safe and efficient gas line services",
+    description: "Safe and efficient gas line services",
+    image: gasImg,
     features: [
-      "Gas Line Installation – Expert installation for furnaces, water heaters, stoves, and other appliances",
-      "Gas Line Repairs – Prompt repairs to address leaks and ensure safety",
-      "Gas Line Inspections – Thorough inspections to detect potential issues and maintain compliance",
-      "Gas Appliance Hookups – Safe connections for all your gas-powered appliances"
+      "Gas Line Installation",
+      "Gas Line Repairs",
+      "Gas Line Inspections",
+      "Gas Appliance Hookups"
     ]
   },
   {
     id: 5,
-    title: "Indoor Air Quality Solutions",
-    description: "Improve the air you breathe with our indoor air quality services",
+    title: "Indoor Air Quality",
+    description: "Improve the air you breathe",
+    image: airQualityImg,
     features: [
-      "Air Purification Systems – Advanced solutions to remove airborne pollutants and allergens",
-      "Humidifiers & Dehumidifiers – Maintain balanced indoor humidity levels",
-      "Duct Cleaning Services – Enhance air quality by removing dust and debris from your ducts"
+      "Air Purification Systems",
+      "Humidifiers & Dehumidifiers",
+      "Duct Cleaning Services"
     ]
   },
   {
     id: 6,
     title: "Ductwork Services",
-    description: "Proper ductwork is essential for efficient HVAC operation",
+    description: "Essential for efficient HVAC operation",
+    image: ventilationImg,
     features: [
-      "Duct Installation – Custom solutions to optimize airflow and efficiency",
-      "Duct Repair & Sealing – Improve energy efficiency by sealing leaks and repairing damage",
-      "Duct Modifications – Enhancements to improve airflow and comfort throughout your space"
+      "Duct Installation",
+      "Duct Repair & Sealing",
+      "Duct Modifications"
     ]
   },
   {
     id: 7,
-    title: "Commercial HVAC Services",
-    description: "Our commercial HVAC services are tailored to meet the unique needs of businesses",
+    title: "Commercial HVAC",
+    description: "Tailored solutions for businesses",
+    image: commercialImg,
     features: [
-      "HVAC System Installation – Scalable solutions for offices, retail spaces, and more",
-      "Routine Maintenance Plans – Preventative maintenance to reduce downtime and operational costs",
-      "Emergency Repairs – 24/7 services to keep your business running smoothly"
+      "HVAC System Installation",
+      "Routine Maintenance Plans",
+      "Emergency Repairs"
     ]
   },
   {
     id: 8,
     title: "Maintenance Agreements",
-    description: "Keep your HVAC system in top condition with our flexible maintenance agreements",
+    description: "Keep your HVAC system in top condition",
+    image: maintenanceImg,
     features: [
-      "Scheduled Inspections – Regular tune-ups to extend system lifespan and improve efficiency",
-      "Priority Service – Get priority scheduling and faster response times",
-      "Discounted Repairs – Exclusive savings on repair services and parts",
-      "Energy Efficiency Improvements – Lower energy bills with optimized system performance"
+      "Scheduled Inspections",
+      "Priority Service",
+      "Discounted Repairs",
+      "Energy Efficiency"
     ]
   },
   {
     id: 9,
-    title: "Emergency HVAC Services",
-    description: "Unexpected HVAC issues? We offer 24/7 emergency services, so you're never left without heating or cooling when you need it most",
+    title: "Emergency Services",
+    description: "24/7 emergency HVAC services",
+    image: emergencyImg,
     features: [
       "24/7 Emergency Response",
-      "Rapid Diagnostics and Repairs",
-      "All Major HVAC Systems Serviced",
-      "Expert Emergency Team"
+      "Rapid Diagnostics",
+      "All Systems Serviced",
+      "Expert Team"
     ]
   }
 ];
-
-const service: CollectionEntry<"services">[] = (
-  await getCollection("services")
-).sort(
-  (a: CollectionEntry<"services">, b: CollectionEntry<"services">) =>
-    a.data.main.id - b.data.main.id,
-);
 
 // Define variables for page content
 const title: string = "Services";
@@ -154,29 +162,69 @@ const pageTitle: string = `Services | ${SITE.title}`;
           {title}
         </h1>
 
-        <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
+        <SecondaryCTA title="Reviews" url="#testimonials" />
       </div>
 
-      <p class="lg:w-1/2 text-left">
-        At H & P Heating and Air Conditioning, we provide top-quality HVAC solutions to keep your home or business comfortable all year long. Our experienced professionals offer reliable, efficient, and affordable services, from installations to emergency repairs. Whether you need heating, cooling, or air quality solutions, we're here to help.
+      <p class="w-full text-left">
+        H & P Heating and Air Conditioning delivers expert HVAC services designed to keep your space comfortable in every season. From precision installations to responsive repairs, our skilled technicians are committed to quality workmanship and customer satisfaction. Trust us for all your heating, cooling, and ventilation needs—we've got you covered.
       </p>
     </div>
-    <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
-    <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 xl:gap-8">
-      {
-        service.map((service, index) => {
-          return <CardSmall service={service} />;
-        })
-      }
-    </section>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          servicesList.map((service) => (
+            <div class="group flex flex-col h-full overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-neutral-800">
+              {/* Image container with hover animation */}
+              <div class="relative h-48 w-full overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  draggable={"false"}
+                  format={"avif"}
+                  loading={"lazy"}
+                />
+              </div>
+              {/* Content */}
+              <div class="flex flex-col flex-grow p-6">
+                <h3 class="text-xl font-bold text-red-500 dark:text-red-400 mb-2">
+                  {service.title}
+                </h3>
+                <p class="text-neutral-600 dark:text-neutral-400 mb-4 text-sm">
+                  {service.description}
+                </p>
+                <ul class="mt-auto space-y-2">
+                  {service.features.map((feature) => (
+                    <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
+                      <svg 
+                        class="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path 
+                          stroke-linecap="round" 
+                          stroke-linejoin="round" 
+                          stroke-width="2" 
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      <span class="text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))
+        }
+      </div>
   </div>
 
   <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
     <!--Features statistics section-->
     <FeaturesStatsAlt
       title="Why Choose H & P Heating and Air Conditioning?"
-      subTitle="We are a family-owned and operated and dedicated to providing the best possible service to our customers."
+      subTitle="We are committed to delivering exceptional service and ensuring complete customer satisfaction with every job."
       benefits={[
         "Expert HVAC technicians for reliable and efficient services.",
         "Emergency repairs available for unexpected issues.",
@@ -185,50 +233,6 @@ const pageTitle: string = `Services | ${SITE.title}`;
     />
   </div>
 
-  <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-    <div class="mx-auto max-w-2xl lg:max-w-5xl">
-      <div class="text-center mb-10">
-        <h2 class="text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight">
-          All Services
-        </h2>
-      </div>
-
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {
-          servicesList.map((service) => (
-            <div class="flex flex-col h-full p-6 bg-neutral-100 dark:bg-neutral-800/50 rounded-xl shadow-sm transition-all duration-200 hover:shadow-md">
-              <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-200 mb-3">
-                {service.title}
-              </h3>
-              <p class="text-neutral-600 dark:text-neutral-400 mb-4">
-                {service.description}
-              </p>
-              <ul class="mt-auto space-y-2">
-                {service.features.map((feature) => (
-                  <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
-                    <svg 
-                      class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                        stroke-width="2" 
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span class="text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </div>
   <!--Testimonials section-->
   <TestimonialsSectionAlt
     title="What Our Customers Say"

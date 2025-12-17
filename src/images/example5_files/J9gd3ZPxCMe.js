@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("FBNucleusClockFilled20Icon.react",["react"],(function(t,n,r,o,a,i,l){"use strict";var e,s=e||(e=o("react"));function u(e){return s.jsxs("svg",babelHelpers.extends({viewBox:"0 0 20 20",width:"1em",height:"1em",fill:"currentColor"},e,{children:[e.title!=null&&s.jsx("title",{children:e.title}),e.children!=null&&s.jsx("defs",{children:e.children}),s.jsx("path",{d:"M.5 10a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0zm10.25-4.25a.75.75 0 0 0-1.5 0V10c0 .199.079.39.22.53l2.5 2.5a.75.75 0 1 0 1.06-1.06l-2.28-2.28V5.75z"})]}))}u.displayName=u.name+" [from "+i.id+"]",u._size=20,u._isSVG=!0;var c=u;l.default=c}),98);
+__d("GroupsCometHistoryDialogQuery_facebookRelayOperation",[],(function(t,n,r,o,a,i){a.exports="25293024047054640"}),null);

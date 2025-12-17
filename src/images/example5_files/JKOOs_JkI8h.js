@@ -1,0 +1,5 @@
+;/*FB_PKG_DELIM*/
+
+__d("CometTimelineReviewViewerQuery_facebookRelayOperation",[],(function(t,n,r,o,a,i){a.exports="10016175161784003"}),null);
+__d("CometTimelineReviewViewerQuery$Parameters",["CometTimelineReviewViewerQuery_facebookRelayOperation"],(function(t,n,r,o,a,i){"use strict";var e={kind:"PreloadableConcreteRequest",params:{id:n("CometTimelineReviewViewerQuery_facebookRelayOperation"),metadata:{},name:"CometTimelineReviewViewerQuery",operationKind:"query",text:null}};a.exports=e}),null);
+__d("CometTimelineReviewRoot.entrypoint",["CometTimelineReviewViewerQuery$Parameters","JSResourceForInteraction","buildCometActivityLogRoute.entrypoint"],(function(t,n,r,o,a,i,l){"use strict";var e=r("buildCometActivityLogRoute.entrypoint")(r("JSResourceForInteraction")("CometTimelineReviewRoot.react").__setRef("CometTimelineReviewRoot.entrypoint"),function(e){return{queries:{timelineReviewViewQueryReference:{parameters:n("CometTimelineReviewViewerQuery$Parameters"),variables:{}}}}});l.default=e}),98);

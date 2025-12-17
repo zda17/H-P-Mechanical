@@ -10,16 +10,18 @@ import TestimonialsSectionAlt from "@components/sections/testimonials/Testimonia
 // Import necessary images
 import HeroImageAlt from "@images/hero-image-3.png";
 import HeroImageAltTwo from "@images/hero-image-4.png";
-import heatingInstallation from "@images/heating-installation.jpg";
-import heatingInstallationTwo from "@images/heating-installation-2.jpg";
-import samsung from "@images/samsung.jpg";
-import samsungtwo from "@images/samsungtwo.jpg";
-import ameristarupgradetwo from "src/images/starlight/ameristar-upgrade-two.jpg";
-import gasvalve from "@/images/gas-valve.jpg";
-import gasvalvetwo from "@/images/gas-valve-two.jpg";
-import ameristarupgrade from "src/images/starlight/ameristar-upgrade.jpg";
-import gassystem from "@images/gassystem.jpg";
-import gassystemtwo from "src/images/gassystemtwo.jpg";
+import example6 from "@images/example6.webp";
+import example7 from "@images/example7.jpeg";
+import example4 from "@images/example4.jpg";
+import example8 from "@images/example8.jpg";
+import example1 from "src/images/example1.jpg";
+import example2 from "@/images/example2.jpg";
+import example9 from "@/images/example9.jpg";
+import example10 from "@/images/example10.jpg";
+import example11 from "@images/example11.webp";
+import example12 from "@/images/example12.jpg";
+import example13 from "@/images/example13.webp";
+import example14 from "@/images/example14.jpg";
 import { SITE } from "@data/constants";
 
 interface Article {
@@ -34,87 +36,85 @@ interface Article {
   imgOneAlt?: string;
   imgTwo?: any;
   imgTwoAlt?: string;
+  imgPosition?: string;
 }
 
 const articles: Article[] = [
-{
+  {
     isRightSection: false,
-    title: "Commercial HVAC Installation for Henryetta High School",
-    subTitle:"Installed a new commercial grade HVAC system for Henryetta High School, ensuring optimal comfort and energy efficiency for the school's students and staff!",
+    title: "Residential AC Installation",
+    subTitle: "Complete air conditioning system installation for a local residence. Our team installed a high-efficiency unit to provide reliable cooling during the hot summer months, ensuring maximum comfort and energy savings for the homeowner.",
     single: false,
-    imgOne: HeroImageAlt,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
-    imgTwo: HeroImageAltTwo,
-    imgTwoAlt: "Person working in the office",
+    imgOne: example6,
+    imgOneAlt: "HVAC technician installing AC unit",
+    imgTwo: example7,
+    imgTwoAlt: "Completed AC installation",
     btnExists: true,
     btnTitle: "Get a quote",
     btnURL: "/contact",
   },
   {
     isRightSection: true,
-    title: "American Standard System Installation For A Cozy Winter",
-    subTitle:"Enjoy a warm and reliable home throughout the colder months with a top-quality HVAC system.\n14 SEER Package System.\n4 Ton A/C.\n90K BTU Gas Heat.\nDuct Repairs Included.\n10-Year Equipment Warranty.\nBrand New Surge Protector.\nWorry-Free Comfort All Winter Long!",
+    title: "Commercial Heating System Upgrade",
+    subTitle: "Upgraded the heating system for a local business, replacing outdated equipment with a modern, energy-efficient solution. The new system provides consistent warmth throughout the facility while reducing monthly energy costs.",
     single: false,
-    imgOne: heatingInstallation,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
-    imgTwo: heatingInstallationTwo,
-    imgTwoAlt: "Person working in the office",
+    imgOne: example4,
+    imgOneAlt: "Commercial heating equipment",
+    imgTwo: example8,
+    imgTwoAlt: "New heating system installed",
     btnExists: true,
     btnTitle: "Get a quote",
     btnURL: "/contact",
   },
   {
     isRightSection: false,
-    title: "Samsung Mini Split Installations That Make Your Place Cooler",
-    subTitle:"Customer enjoyed the cooler weather with the installation of this Samsung mini-split system.We’re committed to keeping your systems running smoothly.",
+    title: "Ductwork Repair & Optimization",
+    subTitle: "Comprehensive ductwork inspection and repair for improved airflow and efficiency. Our team sealed leaks, replaced damaged sections, and optimized the entire system to ensure even temperature distribution throughout the property.",
     single: false,
-    imgOne: samsung,
-    imgOneAlt: "Samsung Equipment One",
-    imgTwo: samsungtwo,
-    imgTwoAlt: "Samsung Equipment Two",
+    imgOne: example1,
+    imgOneAlt: "Ductwork repair in progress",
+    imgTwo: example2,
+    imgTwoAlt: "Completed ductwork installation",
     btnExists: true,
     btnTitle: "Get a quote",
     btnURL: "/contact",
   },
   {
     isRightSection: true,
-    title: "Ameristar 3 Ton System Upgrade: 80% Gas Furnace & Coil",
-    subTitle:
-      "3 Ton Ameristar HVAC system upgraded, including an energy-efficient 80% natural gas furnace and a new evaporator coil. This upgrade ensures reliable comfort throughout the year, with improved heating and cooling performance. The installation was quick and hassle-free, bringing a more efficient system to your home in no time.",
+    title: "Emergency Furnace Replacement",
+    subTitle: "Rapid response to a heating emergency—replaced a failing furnace with a new high-efficiency unit. Our team completed the installation quickly to restore warmth to the home before temperatures dropped further.",
     single: false,
-    imgOne: ameristarupgradetwo,
-    imgOneAlt: "Image of Ameristar System Upgrade",
-    imgTwo: ameristarupgrade,
-    imgTwoAlt: "Second image of Ameristar System Upgrade",
+    imgOne: example11,
+    imgOneAlt: "Furnace components",
+    imgTwo: example12,
+    imgTwoAlt: "New furnace installation",
     btnExists: true,
     btnTitle: "Get a quote",
     btnURL: "/contact",
   },
   {
     isRightSection: false,
-    title: "Quick & Reliable Gas Valve, Blower Motor and Oven Repairs!",
+    title: "Mini-Split System Installation",
+    subTitle: "Installed ductless mini-split systems for 2 homes that lacked existing ductwork. This efficient solution provides both heating and cooling with individual zone control for maximum comfort and flexibility.",
     single: false,
-    subTitle:
-      "Gas valve and ECM blower motor replaced on unit as well as a heater installed in a commercial oven, and a gas valve replaced on a residential heating system, ensuring reliable performance and efficiency.",
-    imgOne: gasvalve,
-    imgOneAlt:
-      "Image of gas valve zoomed in",
-    imgTwo: gasvalvetwo,
-    imgTwoAlt: "Second image of gas valve",
+    imgOne: example9,
+    imgOneAlt: "Mini-split outdoor unit",
+    imgTwo: example10,
+    imgPosition: "top",
+    imgTwoAlt: "Mini-split indoor unit installed",
     btnExists: true,
     btnTitle: "Get a quote",
     btnURL: "/contact",
   },
   {
     isRightSection: true,
-    title: "American Standard 16 SEER Gas Package System: Efficient, Quiet, & Reliable",
-    subTitle:
-      "American Standard 16 SEER Gas Package System installed with an upgraded ductwork add-on. The system runs quietly and flawlessly, backed by excellent warranties for peace of mind.",
+    title: "Preventative Maintenance Program",
+    subTitle: "Regular AC maintenance visit as part of our comprehensive care plan. Our technicians performed a thorough inspection, cleaned the condenser coils, checked refrigerant levels, and made adjustments to ensure optimal cooling performance and extend the system's lifespan.",
     single: false,
-    imgOne: gassystem,
-    imgOneAlt: "In progress building structure",
-    imgTwo: gassystemtwo,
-    imgTwoAlt: "Brown and gray building under construction",
+    imgOne: example13,
+    imgOneAlt: "HVAC maintenance in progress",
+    imgTwo: example14,
+    imgTwoAlt: "System inspection",
     btnExists: true,
     btnTitle: "Get a quote",
     btnURL: "/contact",
@@ -166,6 +166,7 @@ const pageTitle: string = `Projects | ${SITE.title}`;
           btnExists={article.btnExists}
           btnTitle={article.btnTitle}
           btnURL={article.btnURL}
+          imgPosition={article.imgPosition}
         />
       )
     })
@@ -174,8 +175,8 @@ const pageTitle: string = `Projects | ${SITE.title}`;
   <TestimonialsSectionAlt />
 
   <HeroSectionAlt
-    title="Let's Work Together"
-    subTitle="We're family-owned, local, and looking forward to earning your trust."
+    title="H & P Mechanical"
+    subTitle="Your trusted partner for all heating, cooling, and ventilation needs. Contact us today for a free quote."
     btnTitle="Get a Quote"
     url="/contact"
   />

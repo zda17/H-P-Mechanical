@@ -1,104 +1,166 @@
 ---
 // Import the necessary dependencies.
 import AuthBtn from "@components/ui/buttons/AuthBtn.astro";
-import ContactIconBlock from "@components/ui/blocks/ContactIconBlock.astro";
 import TextInput from "@components/ui/forms/input/TextInput.astro";
 import EmailContactInput from "@components/ui/forms/input/EmailContactInput.astro";
 import PhoneInput from "@components/ui/forms/input/PhoneInput.astro";
 import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
+import { Image } from "astro:assets";
+import bgImage from "@images/example8.jpg";
 
 // Define the variables that will be used in this component
 const title: string = "Contact us";
 const subTitle: string =
-  "Have questions or want to discuss a project? Give us a call today for a free consultation, and let's craft the perfect solution with our tools and services. We also offer free quotes on system installation or replacement!";
-const formTitle: string = "Fill in the form below";
+  "Have questions or want to discuss a project? Give us a call today for a free consultation, and let's craft the perfect solution with our tools and services.";
+const formTitle: string = "Send us a message";
 const formSubTitle: string = "We'll get back to you within 1 business day.";
 ---
 
 <!-- Contact Us -->
-<section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-  <div class="mx-auto max-w-2xl lg:max-w-5xl">
-    <div class="text-center">
+<section class="relative min-h-screen overflow-hidden">
+  <!-- Background image with blur -->
+  <div class="absolute inset-0 z-0">
+    <Image
+      src={bgImage}
+      alt="Background"
+      class="h-full w-full object-cover"
+      draggable={"false"}
+      format={"avif"}
+      loading={"eager"}
+    />
+    <!-- Blur overlay -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+  </div>
+
+  <!-- Content container -->
+  <div class="relative z-10 mx-auto max-w-[85rem] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <!-- Title section -->
+    <div class="mx-auto max-w-2xl text-center mb-12">
       <h1
-        class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+        class="text-balance text-3xl font-bold tracking-tight text-white md:text-5xl md:leading-tight"
       >
         {title}
       </h1>
-      <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
+      <p class="mt-4 text-lg text-neutral-200">
         {subTitle}
       </p>
     </div>
 
-    <div class="mt-12 grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
-      <div class="flex flex-col rounded-xl p-4 sm:p-6 lg:p-8">
-        <h2
-          class="mb-8 text-xl font-bold text-neutral-700 dark:text-neutral-300"
-        >
-          {formTitle}
-        </h2>
-        <!-- Form for user input with various input fields.-->
-        <!-- Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)-->
-        <form
-          action="https://hvac.money/form/PMEb8hPuJO"
-          method="POST"
-        >
-          <div class="grid gap-4">
-            <TextInput
-              id="hs-firstname-contacts"
-              label="Full Name"
-              name="name"
-            />
-            <EmailContactInput id="hs-email-contacts" />
-            <PhoneInput id="hs-phone-number" />
-            <TextAreaInput
-              id="hs-about-contacts"
-              label="Details"
-              name="details"
-            />
+    <!-- Main content grid -->
+    <div class="mx-auto max-w-6xl">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <!-- Contact Form Card -->
+        <div class="contact-card rounded-2xl border border-red-100/40 bg-red-50/60 p-6 shadow-2xl backdrop-blur-md sm:p-8 lg:p-10">
+          <h2
+            class="mb-6 text-2xl font-bold text-neutral-800 dark:text-white"
+          >
+            {formTitle}
+          </h2>
+          <!-- Form for user input with various input fields.-->
+          <form
+            action="https://hvac.money/form/PMEb8hPuJO"
+            method="POST"
+          >
+            <div class="grid gap-5">
+              <TextInput
+                id="hs-firstname-contacts"
+                label="Full Name"
+                name="name"
+              />
+              <EmailContactInput id="hs-email-contacts" />
+              <PhoneInput id="hs-phone-number" />
+              <TextAreaInput
+                id="hs-about-contacts"
+                label="Details"
+                name="details"
+              />
+            </div>
+
+            <div class="mt-6 grid">
+              <AuthBtn title="Send Message" />
+            </div>
+
+            <div class="mt-4 text-center">
+              <p class="text-sm text-neutral-600 dark:text-neutral-300">
+                {formSubTitle}
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="flex flex-col gap-6">
+          <!-- Location Card -->
+          <div class="contact-card flex items-start gap-5 rounded-2xl border border-red-100/40 bg-red-50/60 p-6 shadow-2xl backdrop-blur-md transition-all duration-300 hover:scale-[1.02]">
+            <div class="flex-shrink-0 text-red-700 dark:text-red-500">
+              <Icon name="mapPin" />
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-neutral-800 dark:text-white">Visit Our Office</h3>
+              <p class="mt-1 font-semibold text-red-700 dark:text-red-500">H & P Mechanical</p>
+              <p class="mt-1 text-neutral-600 dark:text-neutral-200">
+                2112 N George Nigh Expy<br />
+                McAlester, OK 74501
+              </p>
+            </div>
           </div>
 
-          <div class="mt-4 grid">
-            <AuthBtn title="Send Message" />
+          <!-- Phone Card -->
+          <div class="contact-card flex items-start gap-5 rounded-2xl border border-red-100/40 bg-red-50/60 p-6 shadow-2xl backdrop-blur-md transition-all duration-300 hover:scale-[1.02]">
+            <div class="flex-shrink-0 text-red-700 dark:text-red-500">
+              <Icon name="phone" />
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-neutral-800 dark:text-white">Call Us</h3>
+              <p class="mt-1 text-neutral-600 dark:text-neutral-200">
+                Give us a call for all your Heating & Cooling Needs!
+              </p>
+              <a 
+                href="tel:+19184262889" 
+                class="mt-2 inline-block text-xl font-bold text-red-700 dark:text-red-500 transition-colors hover:text-red-800 dark:hover:text-red-500"
+              >
+                (918) 426-2889
+              </a>
+            </div>
           </div>
 
-          <div class="mt-3 text-center">
-            <p class="text-sm text-neutral-600 dark:text-neutral-400">
-              {formSubTitle}
-            </p>
+          <!-- Email Card -->
+          <div class="contact-card flex items-start gap-5 rounded-2xl border border-red-100/40 bg-red-50/60 p-6 shadow-2xl backdrop-blur-md transition-all duration-300 hover:scale-[1.02]">
+            <div class="flex-shrink-0 text-red-700 dark:text-red-500">
+              <Icon name="envelopeOpen" />
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-neutral-800 dark:text-white">Email Us</h3>
+              <p class="mt-1 text-neutral-600 dark:text-neutral-200">
+                Prefer the written word? Drop us an email at
+              </p>
+              <a 
+                href="mailto:ap@hpmechanicalcontractors.com" 
+                class="mt-2 inline-block font-bold text-red-700 dark:text-red-500 transition-colors hover:text-red-800 dark:hover:text-red-500 break-all"
+              >
+                ap@hpmechanicalcontractors.com
+              </a>
+            </div>
           </div>
-        </form>
-      </div>
-
-      <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
-      <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
-        
-        <ContactIconBlock
-          heading="Visit our office"
-          content="Kelch's Total Comfort, LLC"
-          isAddressVisible={true}
-          addressContent="917 W Main St, Henryetta, OK 74437"
-          ><Icon name="mapPin" />
-        </ContactIconBlock>
-  
-        <ContactIconBlock
-        heading="Contact us by Phone"
-        content="Give us a call for all your Heating & Cooling Needs!"
-        isLinkVisible={true}
-        linkTitle="(918)-268-4066"
-        linkURL="#"
-        ><Icon name="phone"/>
-      </ContactIconBlock>
-        
-        <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
-          isLinkVisible={true}
-          linkTitle="info@ktchvac.com"
-          linkURL="#"
-          ><Icon name="envelopeOpen" />
-        </ContactIconBlock>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .contact-card {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .contact-card:hover {
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* Dark mode gradient matching navbar */
+  :global(.dark) .contact-card {
+    background: linear-gradient(to right, rgba(115, 115, 115, 0.95), rgba(64, 64, 64, 0.95));
+    border-color: rgba(115, 115, 115, 0.5);
+  }
+</style>
