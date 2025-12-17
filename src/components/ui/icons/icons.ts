@@ -93,7 +93,7 @@ export const Icons = {
         d: "M12 19V5",
       },
     ],
-    class: "h-5 w-5 flex-shrink-0 text-orange-400 dark:text-orange-300",
+    class: "h-5 w-5 flex-shrink-0 text-red-500 dark:text-red-500",
     width: 24,
     height: 24,
     viewBox: "0 0 24 24",
