@@ -3,7 +3,7 @@
 import AccordionItem from "@components/ui/blocks/AccordionItem.astro";
 
 // Define props from Astro
-const { title, faqs } = Astro.props;
+const { faqs } = Astro.props;
 
 // Define TypeScript interface for props
 interface Faq {
@@ -17,7 +17,6 @@ interface FaqGroup {
 }
 
 interface Props {
-  title: string;
   faqs: FaqGroup;
 }
 // Define a helper function to generate ids dynamically.
